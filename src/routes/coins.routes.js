@@ -1,9 +1,5 @@
 import { Router } from 'express';
 import * as coinsModule from '../controllers/coins.controller.js';
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
-
 const router = Router();
 
 router.get('/coins_all', coinsModule.getCoinsAll);
